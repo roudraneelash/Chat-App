@@ -1,0 +1,48 @@
+.contact-container {
+  display: flex;
+  gap: 1.4rem;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+.profile-pic {
+  display: block;
+  width: 60px; /* adjust the size as per your preference */
+  height: 60px;
+  border-radius: 50%; /* make the pictures circular */
+  object-fit: cover; /* ensure the pictures fill the container */
+}
+.text-container {
+  flex-grow: 1;
+  line-height: 1.5;
+}
+.time-container {
+  margin-left: auto;
+  font-size: 14px;
+  color: #777;
+  align-items: flex-start;
+}
+.contact-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.last-message {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+  font-size: 14px;
+  padding-bottom: 0.6rem;
+  color: #777;
+}
+.contact-list-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.contact-list-container::-webkit-scrollbar {
+  display: none;
+}

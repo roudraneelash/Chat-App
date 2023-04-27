@@ -1,0 +1,294 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "image": "https://randomuser.me/api/portraits/women/1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "image": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "image": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Dave",
+      "image": "https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Eve",
+      "image": "https://randomuser.me/api/portraits/women/5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Frank",
+      "image": "https://randomuser.me/api/portraits/men/6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Grace",
+      "image": "https://randomuser.me/api/portraits/women/7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Heidi",
+      "image": "https://randomuser.me/api/portraits/women/8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Ivy",
+      "image": "https://randomuser.me/api/portraits/women/9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Jack",
+      "image": "https://randomuser.me/api/portraits/men/10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "William",
+      "image": "https://images.unsplash.com/photo-1525357816819-392d2380d821?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    }
+  ],
+  "chats": [
+    {
+      "id": 0,
+      "participants": 1,
+      "messages": [
+        {
+          "sender": 0,
+          "timestamp": "2023-04-23T10:00:00Z",
+          "text": "Hello Alice!"
+        },
+        {
+          "sender": 1,
+          "timestamp": "2023-04-24T10:01:00Z",
+          "text": "Hi John!"
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-04-24T09:00:00Z",
+          "text": "How are you doing today?"
+        },
+        {
+          "sender": 1,
+          "timestamp": "2023-04-24T09:05:00Z",
+          "text": "I'm doing well, thanks! How about you?"
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-04-26T10:00:00Z",
+          "text": "I'm doing pretty good too. Just busy with work."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "participants": 2,
+      "messages": [
+        {
+          "sender": 2,
+          "timestamp": "2023-05-01T12:30:00Z",
+          "text": "Hey there, how's your day going?"
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-05-01T12:32:00Z",
+          "text": "It's going well, thanks for asking. How about yours?"
+        },
+        {
+          "sender": 2,
+          "timestamp": "2023-05-01T12:35:00Z",
+          "text": "Not too bad. I'm just trying to catch up on some work. What are you up to today?"
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-05-01T12:37:00Z",
+          "text": "I have a few meetings this afternoon, but otherwise just trying to stay on top of my to-do list. Anything interesting happening on your end?"
+        },
+        {
+          "sender": 2,
+          "timestamp": "2023-05-01T12:40:00Z",
+          "text": "Not really, just the usual grind. But I'm hoping to get outside for a bit later and enjoy the nice weather. How about you?"
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-05-01T12:43:00Z",
+          "text": "That sounds nice. Unfortunately, I think I'll be stuck inside for most of the day. But maybe I can take a quick walk around the block during my lunch break."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "participants": 5,
+      "messages": [
+        {
+          "sender": 5,
+          "timestamp": "2023-05-05T16:00:00Z",
+          "text": "Hey, have you had a chance to look over those documents I sent you?"
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-05-05T16:05:00Z",
+          "text": "Not yet, sorry. I've been swamped with other projects. I'll try to take a look later this afternoon."
+        },
+        {
+          "sender": 5,
+          "timestamp": "2023-05-05T16:10:00Z",
+          "text": "No problem, I understand. But I do need your feedback by tomorrow morning so we can move forward with the project. Can you make that happen?"
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-05-05T16:15:00Z",
+          "text": "Yes, I'll prioritize it and make sure to get it done tonight. Thanks for the reminder."
+        },
+        {
+          "sender": 5,
+          "timestamp": "2023-05-05T16:20:00Z",
+          "text": "Great, I appreciate it. Let me know if you have any questions or concerns."
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-05-05T16:25:00Z",
+          "text": "Will do, thanks for reaching out."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "participants": 7,
+      "messages": [
+        {
+          "sender": 7,
+          "timestamp": "2023-05-15T14:00:00Z",
+          "text": "Hey, did you see the latest episode of that show we were talking about?"
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-05-15T14:05:00Z",
+          "text": "No, not yet. I was planning to watch it tonight though. Did you like it?"
+        },
+        {
+          "sender": 7,
+          "timestamp": "2023-05-15T14:10:00Z",
+          "text": "Yeah, it was pretty good. Let me know what you think after you watch it."
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-05-15T14:15:00Z",
+          "text": "Will do. Anything else you've been watching lately?"
+        },
+        {
+          "sender": 7,
+          "timestamp": "2023-05-15T14:20:00Z",
+          "text": "Not really, just some old favorites. You?"
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-05-15T14:25:00Z",
+          "text": "Same here. I've been meaning to check out that new documentary series though."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "participants": 10,
+      "messages": [
+        {
+          "sender": 10,
+          "timestamp": "2023-05-20T11:00:00Z",
+          "text": "Hey, do you have a minute to talk about the upcoming project?"
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-05-20T11:05:00Z",
+          "text": "Sure, what's on your mind?"
+        },
+        {
+          "sender": 10,
+          "timestamp": "2023-05-20T11:10:00Z",
+          "text": "I wanted to touch base on the timeline and make sure we're still on track to meet our deadlines."
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-05-20T11:15:00Z",
+          "text": "I think we're in good shape so far, but there are still a few things we need to iron out. Let me pull up the latest notes and we can go over them together."
+        },
+        {
+          "sender": 10,
+          "timestamp": "2023-05-20T11:20:00Z",
+          "text": "Sounds good. I'm available for the next hour or so, if that works for you."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "participants": 9,
+      "messages": [
+        {
+          "sender": 0,
+          "timestamp": "2023-05-25T17:00:00Z",
+          "text": "Hey, I just got back from vacation. What's been going on?"
+        },
+        {
+          "sender": 9,
+          "timestamp": "2023-05-25T17:05:00Z",
+          "text": "Not much, just keeping busy with work. How was your trip?"
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-04-27T13:04:22.720Z",
+          "text": "its raining over here"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "participants": 11,
+      "messages": [
+        {
+          "sender": 0,
+          "timestamp": "2023-04-27T14:04:02.614Z",
+          "text": "hello"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "participants": 6,
+      "messages": []
+    },
+    {
+      "id": 8,
+      "participants": 3,
+      "messages": []
+    },
+    {
+      "id": 9,
+      "participants": 8,
+      "messages": []
+    },
+    {
+      "id": 10,
+      "participants": 4,
+      "messages": [
+        {
+          "sender": 0,
+          "timestamp": "2023-04-27T14:09:19.759Z",
+          "text": "Hi Dave"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "participants": 10,
+      "messages": []
+    }
+  ]
+}
