@@ -1,7 +1,6 @@
 //import necessary modules
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { CiCirclePlus } from "react-icons/ci";
 import "../styles/Nav.css";
 
 //create Nav component with userId as props
