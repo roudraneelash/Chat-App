@@ -31,9 +31,6 @@ function Nav({ userId }) {
     <div className="nav-bar">
       <img className="nav-profile-pic" src={user.image} alt="profile" />
       <p className="nav-profile-name">{user.name}</p>
-      <button>
-        <CiCirclePlus size={36} />
-      </button>
     </div>
   ) : null;
 }
