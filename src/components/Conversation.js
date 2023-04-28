@@ -1,12 +1,15 @@
+// Importing necessary components
 import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
 import InputBox from "./InputBox";
 import MessageList from "./MessageList";
 
 function Conversation({ convo, updateChat }) {
+  // Initializing states
   const [userId, setUserId] = useState();
   const [updatedMessages, setUpdatedMessages] = useState([]);
 
+  // Updating states with the selected conversation's data
   useEffect(() => {
     if (convo.length >= 1) {
       setUserId(convo[0].participants);
@@ -14,6 +17,7 @@ function Conversation({ convo, updateChat }) {
     }
   }, [convo]);
 
+  // Handling message submission
   const handleSubmit = (msg) => {
     const message = {
       sender: 0, // Replace with the sender ID
@@ -26,6 +30,7 @@ function Conversation({ convo, updateChat }) {
     updateChat(newMessages);
   };
 
+  // Rendering the conversation component
   return (
     <div className="conversation-container">
       <Nav userId={userId} />

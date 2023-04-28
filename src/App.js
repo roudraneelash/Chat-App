@@ -6,20 +6,19 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function App() {
-  const [chats, setChats] = useState([]);
-  //display on rightbar
-  const [activeChats, setActiveChats] = useState([]);
-  const [searchResults, setSearchResults] = useState([]);
+  // State variables
+  const [chats, setChats] = useState([]); // all chats fetched from the server
+  const [activeChats, setActiveChats] = useState([]); // the currently active chat
+  const [searchResults, setSearchResults] = useState([]); // search results for contacts
+  const [users, setUsers] = useState([]); // all users fetched from the server
+  const [activeUsers, setActiveUsers] = useState([]); // users with whom the current user has an active chat
 
-  const [users, setUsers] = useState([]);
-  //display on leftbar
-  const [activeUsers, setActiveUsers] = useState([]);
-
-  //on loading
+  // Fetch data from the server on page load
   useEffect(() => {
     fetchData();
   }, []);
 
+  // Update active users whenever chats or users change
   useEffect(() => {
     const updatedActiveUsers = [];
 
@@ -28,7 +27,7 @@ export default function App() {
         const lastMessage = chat.messages[chat.messages.length - 1].text;
         const lastSeen = chat.messages[chat.messages.length - 1].timestamp;
 
-        //finding relevant user(returns array matching the id)
+        // Find the relevant user (returns array matching the id)
         const matchingUsers = users.filter(
           (user) => user.id === chat.participants
         );
@@ -42,21 +41,27 @@ export default function App() {
         updatedActiveUsers.unshift(newitem);
       }
     });
+
     setActiveUsers(updatedActiveUsers);
   }, [chats, users]);
 
+  // Update search results whenever active users change
   useEffect(() => {
     setSearchResults(activeUsers);
   }, [activeUsers]);
-  //create chat
+
+  // Handle a user clicking on a contact
   const handleContactClick = (contactId) => {
     const convo = chats.filter((chat) => chat.participants === contactId);
     setActiveChats(convo);
   };
+
+  // Handle updates to a chat
   const handleUpdate = (newMessages) => {
     addMessage(newMessages);
   };
 
+  // Fetch data from the server
   const fetchData = async () => {
     try {
       const usersResponse = await axios.get("http://localhost:8000/users");
@@ -69,20 +74,23 @@ export default function App() {
     }
   };
 
+  // Add a new message to the currently active chat
   const addMessage = (newMessages) => {
     axios
       .patch(`http://localhost:8000/chats/${activeChats[0].id}`, {
         messages: newMessages,
       })
       .then((response) => {
-        // handle successful patch response here
+        // Handle successful patch response here
         fetchData();
       })
       .catch((error) => {
         console.log(error);
-        // handle error response here
+        // Handle error response here
       });
   };
+
+  // Handle changes to the search input
   const handleChange = (searchInput) => {
     const filteredUsers = users.filter((user) =>
       user.name.toLowerCase().includes(searchInput.toLowerCase())
@@ -94,9 +102,13 @@ export default function App() {
       setSearchResults(activeUsers);
     }
   };
+
+  // Handle the user clicking on the "All Contacts" button
   const handleContacts = () => {
     setSearchResults(users);
   };
+
+  // Handle the user
   const handleConvo = () => {
     setSearchResults(activeUsers);
   };

@@ -1,13 +1,17 @@
+// Importing required libraries
 import React, { useEffect, useState } from "react";
 import Message from "./Message";
 
 function MessageList({ messages }) {
+  // Setting state for messageList
   const [messageList, setMessageList] = useState([]);
 
+  // Update messageList when messages prop changes
   useEffect(() => {
     setMessageList(messages || []);
   }, [messages]);
 
+  // Render message container with messages
   return (
     <div className="chat-section">
       <div className="message-container">
@@ -25,24 +29,3 @@ function MessageList({ messages }) {
 }
 
 export default MessageList;
-
-/*
-<Message author="sender" time="10:30 AM" text="Hello there!" />
-      <Message author="user" time="10:35 AM" text="Hi, how are you?" />
-      <Message author="sender" time="10:30 AM" text="Hello there!" />
-      <Message author="user" time="10:35 AM" text="Hi, how are you?" />
-      <Message author="sender" time="10:30 AM" text="Hello there!" />
-      <Message author="user" time="10:35 AM" text="Hi, how are you?" />
-      <Message author="sender" time="10:30 AM" text="Hello there!" />
-      <Message author="user" time="10:35 AM" text="Hi, how are you?" />
-      <Message author="sender" time="10:30 AM" text="Hello there!" />
-      <Message author="user" time="10:35 AM" text="Hi, how are you?" />
-      <Message author="sender" time="10:30 AM" text="Hello there!" />
-      <Message author="user" time="10:35 AM" text="Hi, how are you?" />
-      <Message author="sender" time="10:30 AM" text="Hello there!" />
-      <Message author="user" time="10:35 AM" text="Hi, how are you?" />
-      <Message author="sender" time="10:30 AM" text="Hello there!" />
-      <Message author="user" time="10:35 AM" text="Hi, how are you?" />
-      <Message author="sender" time="10:30 AM" text="Hello there!" />
-      <Message author="user" time="10:35 AM" text="Hi, how are you?" />
-      */

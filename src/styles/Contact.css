@@ -15,7 +15,7 @@
   object-fit: cover; /* ensure the pictures fill the container */
 }
 .text-container {
-  flex-grow: 1;
+  /* flex-grow: 1;W */
   line-height: 1.5;
 }
 .time-container {
@@ -33,7 +33,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 300px;
+  max-width: 220px;
   font-size: 14px;
   padding-bottom: 0.6rem;
   color: #777;

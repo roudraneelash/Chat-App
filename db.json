@@ -256,6 +256,11 @@
           "sender": 0,
           "timestamp": "2023-04-27T14:04:02.614Z",
           "text": "hello"
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-04-28T18:45:43.944Z",
+          "text": "Hi William"
         }
       ]
     },
@@ -272,7 +277,13 @@
     {
       "id": 9,
       "participants": 8,
-      "messages": []
+      "messages": [
+        {
+          "sender": 0,
+          "timestamp": "2023-04-28T18:44:05.703Z",
+          "text": "Hi Heidi"
+        }
+      ]
     },
     {
       "id": 10,
@@ -282,6 +293,16 @@
           "sender": 0,
           "timestamp": "2023-04-27T14:09:19.759Z",
           "text": "Hi Dave"
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-04-28T18:34:11.770Z",
+          "text": "hello"
+        },
+        {
+          "sender": 0,
+          "timestamp": "2023-04-28T18:45:33.770Z",
+          "text": "HI"
         }
       ]
     },
