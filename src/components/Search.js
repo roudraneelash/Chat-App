@@ -8,11 +8,6 @@ function Search({ handleSearch }) {
   const handleChange = (e) => {
     setSearchInput(e.target.value);
   };
-  // const handleSearchCallback = useCallback(handleSearch, [handleSearch]);
-
-  // useEffect(() => {
-  //   handleSearchCallback(searchInput);
-  // }, [searchInput, handleSearchCallback]);
 
   useEffect(() => {
     handleSearch(searchInput);
