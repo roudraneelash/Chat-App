@@ -28,7 +28,7 @@ function Contact({ name, profile_picture, last_message, last_seen, onClick }) {
         <p className="last-message">{last_message}</p>
       </div>
       <div className="time-container">
-        {formattedLastSeen != "Invalid Date" && <p>{formattedLastSeen}</p>}
+        {formattedLastSeen !== "Invalid Date" && <p>{formattedLastSeen}</p>}
       </div>
     </div>
   );

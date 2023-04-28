@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { FiSearch } from "react-icons/fi";
 import "../styles/Search.css";
 
@@ -8,10 +8,15 @@ function Search({ handleSearch }) {
   const handleChange = (e) => {
     setSearchInput(e.target.value);
   };
+  const handleSearchCallback = useCallback(handleSearch, [handleSearch]);
 
   useEffect(() => {
-    handleSearch(searchInput);
-  }, [searchInput]);
+    handleSearchCallback(searchInput);
+  }, [searchInput, handleSearchCallback]);
+
+  // useEffect(() => {
+  //   handleSearch(searchInput);
+  // }, [searchInput]);
 
   return (
     <div className="search-container">

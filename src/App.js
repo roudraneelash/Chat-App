@@ -43,7 +43,7 @@ export default function App() {
       }
     });
     setActiveUsers(updatedActiveUsers);
-  }, [chats]);
+  }, [chats, users]);
 
   useEffect(() => {
     setSearchResults(activeUsers);
